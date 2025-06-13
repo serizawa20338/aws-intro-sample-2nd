@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: 'mysql:8'
+    container_name: mysql
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_DATABASE=sample_app_development
+      - MYSQL_USER=sample_app
+      - MYSQL_PASSWORD=sample_app
+      - MYSQL_ROOT_PASSWORD=sample_app
+      - TZ="Asia/Tokyo"
